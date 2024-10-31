@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta charset="UTF-8" />
+    <meta content='yes' name='apple-mobile-web-app-capable' />
+    <meta content='yes' name='mobile-web-app-capable' />
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <meta name="theme-color" content="black">
+    <link rel="apple-touch-icon" href="assets/logos/icon-192x192-apple.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gestão de Despesas em Viagens</title>
+</head>
+
+<body>
+<div class="container">
+    <h2>Gestão de Despesas em Viagens</h2>
+    <div class="input-group">
+        <input type="text" id="descricao" placeholder="Descrição do Item">
+        <input type="number" min="1" id="quantidade" placeholder="Quantidade">
+        <input type="number" min="0" id="valor" placeholder="Valor">
+        <select id="moedaOrigem">
+            <option value="USD">USD</option>
+            <option value="BRL">BRL</option>
+            <option value="EUR">EUR</option>
+            <option value="JPY">JPY</option>
+            <option value="GBP">GBP</option>
+            <option value="AUD">AUD</option>
+        </select>
+        <select id="moedaDestino">
+            <option value="BRL">BRL</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="JPY">JPY</option>
+            <option value="GBP">GBP</option>
+            <option value="AUD">AUD</option>
+        </select>
+        <button onclick="adicionarDespesa()">Adicionar</button>
+    </div>
+    <div class="expense-list" id="listaDespesas"></div>
+    <div class="totals">
+        <p>Total (Moeda de Origem): <span id="totalOrigem">0.00</span></p>
+        <p>Total (Moeda de Destino): <span id="totalDestino">0.00</span></p>
+    </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+
+<script>S
+</script>
+
+</html>
